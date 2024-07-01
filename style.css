@@ -1,17 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-body{
+
+body {
     background-color: #D4CABE;
 }
-nav{
+
+nav {
     background-color: black;
-    height: 50px ;
+    height: 50px;
     color: white;
 }
-nav div{
+
+nav div {
     margin: auto;
     width: 30%;
     padding-top: 7px;
@@ -19,44 +22,60 @@ nav div{
     font-size: 2rem;
     letter-spacing: 7px;
 }
-.aboutMeContainer{
-    background-color:#806248;
+
+.aboutMeContainer {
+    /* background-color: #806248; */
     margin-top: 15px;
     /* width: 50%; */
     height: 29rem;
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-.details{
+
+.details {
     /* background-color: #A5907B; */
     /* float: right; */
     display: inline-block;
     color: black;
-    margin-left: 10px;
+    margin-left: 20px;
     /* margin-right: 35%; */
     /* margin-top: 20%;    */
-    line-height: 35px; 
+    line-height: 35px;
     font-size: 18px;
 }
-.aboutMeContainer h1{
-    /* margin-left: 10%; */
+.paragraph {
+    margin-left: 26%;
+    height: 30%;
+    font-size: 23px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: justify;
+    width: 35%;
+    padding-top: 20px;
+}
+
+.aboutMeContainer h1 {
+    margin-left: 10px;
     font-size: 8rem;
     display: inline-block;
-    color:black ;
+    color: black;
     letter-spacing: 6px;
 }
-hr{
+
+hr {
     margin-top: 30px;
 }
-.text{
+
+.text {
     width: 20%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-.goalone{
+
+.goalone {
     background-color: #806248;
     width: 60%;
     height: 10rem;
@@ -67,57 +86,72 @@ hr{
     border-bottom-right-radius: 35px;
     margin-top: 20px;
 }
-.goalone h2{
+
+.goalone h2 {
     color: white;
     text-align: center;
     letter-spacing: 4px;
     margin-top: 2px;
 }
-.goalone ul li{
+
+.goalone ul li {
     text-align: center;
     line-height: 25px;
     color: white;
 }
-.goalone div{
+
+.goalone div {
     padding-top: 20px;
 }
-.goaltwo{
+
+.goaltwo {
     background-color: black;
     margin-top: 20px;
 }
-.goalthree{
+
+.goalthree {
     background-color: white;
 }
-.goalthree ul li{
+
+.goalthree ul li {
     color: black;
 }
-li{
+
+li {
     list-style: none;
 }
-footer div{
+
+footer div {
     height: 10rem;
 }
-footer div h3{
+
+footer div h3 {
     color: #50311D;
     font-weight: bold;
 }
-.footer-flex{
+
+.footer-flex {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
+
 .footer-flex div {
     margin: 15px;
-    
+
 }
-.footer-flex .useful-links a{
+
+.footer-flex .useful-links a {
     display: block;
     line-height: 35px;
     color: black;
     text-decoration: underline;
 }
-.footer-flex .contact-me{
+
+.footer-flex .contact-me {
     line-height: 35px;
 }
+
 /* .flex-container{
     display: flex;
 }
