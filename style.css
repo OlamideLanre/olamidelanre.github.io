@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #D4CABE;
+}
+nav{
+    background-color: black;
+    height: 50px ;
+    color: white;
+}
+nav div{
+    margin: auto;
+    width: 30%;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 7px;
+}
+.aboutMeContainer{
+    background-color:#806248;
+    margin-top: 15px;
+    /* width: 50%; */
+    height: 29rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.details{
+    /* background-color: #A5907B; */
+    /* float: right; */
+    display: inline-block;
+    color: black;
+    margin-left: 10px;
+    /* margin-right: 35%; */
+    /* margin-top: 20%;    */
+    line-height: 35px; 
+    font-size: 18px;
+}
+.aboutMeContainer h1{
+    /* margin-left: 10%; */
+    font-size: 8rem;
+    display: inline-block;
+    color:black ;
+    letter-spacing: 6px;
+}
+hr{
+    margin-top: 30px;
+}
+.text{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.goalone{
+    background-color: #806248;
+    width: 60%;
+    height: 10rem;
+    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin-top: 20px;
+}
+.goalone h2{
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 2px;
+}
+.goalone ul li{
+    text-align: center;
+    line-height: 25px;
+    color: white;
+}
+.goalone div{
+    padding-top: 20px;
+}
+.goaltwo{
+    background-color: black;
+    margin-top: 20px;
+}
+.goalthree{
+    background-color: white;
+}
+.goalthree ul li{
+    color: black;
+}
+li{
+    list-style: none;
+}
+footer div{
+    height: 10rem;
+}
+footer div h3{
+    color: #50311D;
+    font-weight: bold;
+}
+.footer-flex{
+    display: flex;
+    align-items: center;
+}
+.footer-flex div {
+    margin: 15px;
+    
+}
+.footer-flex .useful-links a{
+    display: block;
+    line-height: 35px;
+    color: black;
+    text-decoration: underline;
+}
+.footer-flex .contact-me{
+    line-height: 35px;
+}
+/* .flex-container{
+    display: flex;
+}
+.flex-container div{
+    background-color: #806248;
+    width: 30%;
+    height: 10rem;
+    margin: 15px;
+} */
