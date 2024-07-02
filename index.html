@@ -15,27 +15,30 @@
         </div>
     </nav>
 
-    <div class="aboutMeContainer" >
-        <div class="imageDiv" style="margin-left: 20px; padding-top:30px ; float: left;">
+    <div class="aboutMeContainer aboutMeContainer-flex" >
+        <div class="imageDiv">
             <img data-testid="slackProfilePicture" src="mySlackProfile.jpg" alt="slack profile image">
         </div>
-        <div style="padding-top: 7%; display: inline-block;">
+        <div style="padding-top: 3%; display: inline-block;">
             <h1 data-testid="slackDisplayName">OL</h1>
+            <div class="paragraph">
+                <p>
+                    Thank you for visiting my website. <br>
+                    walk with me on this journey in tech <br>
+                    and watch me achieve these goals God's willing.
+                </p>
+                <span style="color: #50311D; font-weight: bold;">My Tech Goals</span>
+                <br>
+                <span data-testid="currentDay"></span>
+                <span data-testid="currentTimeUTC"></span>
+            </div>
         </div>
         <br>
-        <div class="details">
-            <span data-testid="currentTimeUTC" onload="getTime()">11:00</span>
-            <span data-testid="currentDay" onload="getDay()">Monday</span>
-            <br>
-        </div>
-        <div class="paragraph">
-            <p>
-                Thank you for visiting my website. <br>
-                walk with me on this journey in tech <br>
-                and watch me achieve these goals God's willing.
-            </p>
-            <span style="color: #50311D; font-weight: bold;">My Tech Goals</span>
-        </div>
+       
+        <!-- <div class="details">
+            <span data-testid="currentDay"></span>
+            <span data-testid="currentTimeUTC"></span>
+        </div> -->
     </div>
     <hr>
     <div class="text">
@@ -46,7 +49,7 @@
         <div>
             <h2 style="color: black;">Improve My Frontend Skills</h2>
             <ul style="list-style-type:disc;">
-                <li>Enhance my skills in building responsive and user-friendly interfaces</li>
+                <li>Enhance my skills in building responsive and user-friendly interfaces.</li>
                 <li>Work on more complex and challenging projects to build a strong portfolio.</li>
                 <li>Learn modern frontend frameworks and libraries like Vue.</li>
             </ul>
@@ -86,19 +89,52 @@
     <div class="useful-links">
         <h3>Useful Links</h3>
         <a href="https://hng.tech/learn" data-testid="hngLink">Break into tech with HNG</a>
-        <a href="https://keyword.dog" data-testid="keywordLink">Dominate serach rankings with the help of Keyword Dog</a>
+        <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
         <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
+        <a href="https://github.com/OlamideLanre">My github</a>
     </div>
 
     <div class="contact-me">
-        <h3>Contact me</h3>
-        <span>Email: </span>
-        <span data-testid="slackEmail">lanreprincess@gmail.com</span>
-        <br>
-        <span>Phone: </span>
-        <span>+234 802 071 5266</span>
+        <div>
+            <h3>Contact me</h3>
+            <span>Email: </span>
+            <span data-testid="slackEmail">lanreprincess@gmail.com</span>
+            <br>
+            <span>Phone: </span>
+            <span>+234 802 071 5266</span>
+        </div>
     </div>
   </footer>
     
 </body>
+<script>
+    function updateDate() {
+            const now = new Date();
+            const weekDays = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ];
+            const hour = now.getUTCHours()
+            const minutes = now.getUTCMinutes()
+            const ampm = hour >= 12 ? 'PM' : 'AM';
+            const formattedHours = hour % 12 || 12;
+            const formattedMinutes = minutes.toString().padStart(2, '0'); 
+
+            const currentDay = weekDays[now.getDay()];
+            const currentTime = hour + ':' + minutes +' '+ampm;
+            const displayDay = document.querySelector('[data-testid="currentDay"]');
+            displayDay.innerHTML = currentDay+',';
+            const displayTime=document.querySelector('[data-testid="currentTimeUTC"]');
+            displayTime.innerHTML= currentTime
+            
+        }
+        updateDate()
+        setInterval(updateDate, 60000);
+
+</script>
 </html>
