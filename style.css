@@ -150,6 +150,7 @@ footer div h3 {
  }
 
 /* MEDIA QUERY */
+/* MOBILE */
 @media screen and (max-width: 540px) {
     nav div{
         font-size: 1rem;
@@ -222,6 +223,7 @@ footer div h3 {
     }
 }
 
+/* TABLET */
 @media screen and (max-width:1024px) {
     nav{
         height: 60px;
